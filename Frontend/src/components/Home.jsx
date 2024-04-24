@@ -9,6 +9,11 @@ import spotify from '../assets/client/clients/spotify.svg'
 import Amazon from '../assets/client/clients/amazon.svg'
 import { Link } from 'react-router-dom'
 import header from '../assets/Logo.png'
+import apple from '../assets/apple.jpeg'
+import insta from '../assets/instagram.svg'
+import fb from '../assets/facebook.svg'
+import twitter from '../assets/twitter.svg'
+import yt from '../assets/youtube.svg'
 
 const Home = () => {
   return (
@@ -80,12 +85,12 @@ const Home = () => {
             </li>
           </ul>
           <ul className="navbar-nav mt-2 mt-lg-0">
-            <li className="nav-item mr-2 mb-3 mb-lg-0">
+            <li className="nav-item mr-2 mb-3 mb-lg-0" id='signup'>
               <Link className="btn btn-secondary" to="/Signup">
                 Sign up
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" id='signup'>
               <Link className="btn btn-secondary" to="/Login">
                 Login
               </Link>
@@ -286,17 +291,90 @@ const Home = () => {
       </div>
     </div>
   </section>
-  <section className="py-5 mb-5">
+
+ 
+<section>
+  <div className="wrapper">
+  <div className="cardd">
+  <img src={apple} alt="logo" />
+    <div className="info">
+      <h1>Apple</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, corporis!</p>
+      <Link to="/Arsha" className="btnn">
+        Read More
+      </Link>
+    </div>
+  </div>
+  <div className="cardd">
+  <img src={apple} alt="logo" />
+    <div className="info">
+      <h1>Snowflake</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo!</p>
+      <Link to="/Profile2" className="btnn">
+        Read More
+      </Link>
+    </div>
+  </div>
+  <div className="cardd">
+  <img src={apple} alt="logo" />
+    <div className="info">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, magni?</p>
+      <Link to="#" className="btnn">
+        Read More
+      </Link>
+    </div>
+  </div>
+</div>
+<div className="wrapper">
+  <div className="cardd">
+  <img src={apple} alt="logo" />
+    <div className="info">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, corporis!</p>
+      <Link to="#" className="btnn">
+        Read More
+      </Link>
+    </div>
+  </div>
+  <div className="cardd">
+  <img src={apple} alt="logo" />
+    <div className="info">
+      <h1>Heading</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo!</p>
+      <Link to="#" className="btnn">
+        Read More
+      </Link>
+    </div>
+  </div>
+  <div className="cardd">
+  <img src={apple} alt="logo" />
+    <div className="info">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, magni?</p>
+      <Link to="#" className="btnn">
+        Read More
+      </Link>
+    </div>
+  </div>
+</div>
+</section>
+
+ 
+ 
+
+
+  {/*<section className="py-5 mb-5">
     <div className="container">
-      <h2>Choose the plan that’s right for yor business</h2>
+      <h2>Discover, Connect, Grow Your Business.</h2>
       <p className="text-muted mb-5">
-        Thank you for your very professional and prompt response. I wished I had
-        found you before{" "}
+      Elevate Your Business, Expand Your Reach{" "}
       </p>
       <div className="row">
         <div className="col-lg-4 mb-4">
           <div className="card pricing-card border-warning">
             <div className="card-body">
+           <div className="img"> <img src={apple} alt="img" /></div>
               <h3 className="mb-1">Starter</h3>
               <h3 className="mb-1 text-warning">Free</h3>
               <p className="payment-period">Per month</p>
@@ -304,7 +382,7 @@ const Home = () => {
                 Thank you for your very professional and prompt response.
               </p>
               <button className="btn btn-outline-warning btn-rounded">
-                Get Started
+                Read more
               </button>
             </div>
           </div>
@@ -341,7 +419,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  </section>
+  </section>*/}
   <section className="py-5 mb-5">
     <div className="container">
       <h2>Satisfied Users</h2>
@@ -590,7 +668,132 @@ const Home = () => {
       </div>
     </div>
   </section>
- 
+  <footer className="foi-footer text-white">
+    <div className="container">
+      <div className="row footer-content">
+        <div className="col-xl-6 col-lg-7 col-md-8">
+          <h2 className="mb-0">
+            Do you want to know more or just have a question? write to us.
+          </h2>
+        </div>
+        <div className="col-md-4 col-lg-5 col-xl-6 py-3 py-md-0 d-md-flex align-items-center justify-content-end">
+          <a href="contact.html" className="btn btn-danger btn-lg">
+            Contact form
+          </a>
+        </div>
+      </div>
+      <div className="row footer-widget-area">
+        <div className="col-md-3">
+          <div className="py-3">
+            <img src="assets/images/logo-white.svg" alt="FOI" />
+          </div>
+          <p className="font-os font-weight-semibold mb3">Get our mobile app</p>
+          <div>
+            <button className="btn btn-app-download mr-2">
+              <img src="assets/images/ios.svg" alt="App store" />
+            </button>
+            <button className="btn btn-app-download">
+              <img src="assets/images/android.svg" alt="play store" />
+            </button>
+          </div>
+        </div>
+        <div className="col-md-3 mt-3 mt-md-0">
+          <nav>
+            <ul className="nav flex-column">
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Account
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  My tasks
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Edit profile
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Activity
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="col-md-3 mt-3 mt-md-0">
+          <nav>
+            <ul className="nav flex-column">
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Careers{" "}
+                  <span className="badge badge-pill badge-secondary ml-3">
+                    Hiring
+                  </span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Blog
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="#!" className="nav-link">
+                  Shop with us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="col-md-3 mt-3 mt-md-0">
+          <p>
+            © foi. 2020{" "}
+            <a
+              href="https://www.bootstrapdash.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-reset"
+            >
+              BootstrapDash
+            </a>
+            .
+          </p>
+          <p>All rights reserved.</p>
+          <nav className="social-menu">
+          <Link to="#!">
+                  <img src={fb} alt="logo" />
+                </Link>
+                <Link to="#!">
+                  <img src={insta} alt="logo" />
+                </Link>
+                <Link to="#!">
+                  <img src={twitter} alt="logo" />
+                </Link>
+                <Link to="#!">
+                  <img src={yt} alt="logo" />
+                </Link>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
 </>
 
 

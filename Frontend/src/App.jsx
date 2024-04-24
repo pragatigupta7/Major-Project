@@ -10,7 +10,10 @@ import Features from './components/Features'
 import Addprofile from './components/Addprofile'
 import Navbar from './components/Navbar'
 import { SnackbarProvider } from 'notistack'
-import Footer from './components/Footer'
+
+import Arsha from './components/Arsha'
+import Profilelisting from './components/Profilelisting'
+import Profile2 from './components/Profile2'
 
 const App = () => {
   return (
@@ -27,10 +30,13 @@ const App = () => {
        <Route path='/About' element={<About/>}/>
        <Route path='/Features' element={<Features/>}/>
        <Route path='/Addprofile' element={<Addprofile/>}/>
+       <Route path='/Arsha' element={<Arsha/>}/>
+       <Route path='/Profilelisting' element={<Profilelisting/>}/>
+       <Route path='/Profile2' element={<Profile2/>}/>
 
 
        </Routes>
-       <Footer/>
+       
       </BrowserRouter>
       </SnackbarProvider>
     </div>
