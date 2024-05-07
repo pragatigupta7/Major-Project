@@ -19,7 +19,7 @@ router.post('/Uploadfile',uploader.single('myfile'),(req,res)=>{
 const mailConfig = {
     service : 'gmail',
     auth: {
-        user: "corporatehub04@gmail.com",
+        user: "corporatehub40@gmail.com",
         pass: "cfwienqtpsakuvhj",
     }
  };
