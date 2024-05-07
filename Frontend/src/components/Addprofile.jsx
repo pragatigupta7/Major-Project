@@ -1,17 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useFormik } from 'formik'
 import { enqueueSnackbar } from 'notistack'
 
 const Addprofile = () => {
+  const[selFile, setSelFile] = useState("")
   const Addprofile = useFormik({
     initialValues: {
       name: '',
       email: '',
       companyname: '',
       description: '',
+      image:'',
       contactnumber: ''
     },
     onSubmit: async (values, action) => {
+      values.image=selFile;
       console.log(values);
       const res = await fetch('http://localhost:5000/addprofile/add', {
         method: 'POST',
@@ -27,13 +30,26 @@ const Addprofile = () => {
       } else {
         enqueueSnackbar('Addprofile failed', { variant: 'error' })
       }
-    },
+    },})
+    const uploadFile=(e)=>{
+      const file=e.target.files[0];
+      if(!File) return;
+      setSelFile(file.name);
+      const fd=new FormData();
+      fd.append("myfile",file);
+      fetch("http://localhost:5000/util/uploadfile",{
+          method:"POST",
+          body:fd,
+      }).then((res)=>{
+              if(res.status==200){
+                  console.log("uploaded file");
+              }
+          });
 
-
-  })
-  return (
-      <>
-        {/* Section: Design Block */}
+      };
+    
+  return (<>
+         {/* Section: Design Block */}
         <section className="background-radial-gradient overflow-hidden">
           <style
             dangerouslySetInnerHTML={{
@@ -105,6 +121,15 @@ const Addprofile = () => {
                           Company Name
                         </label>
                       </div>
+                      <div data-mdb-input-init="" className="form-outline mb-4">
+                        <input
+                          type="file"
+                          id="image"
+                          className="form-control" placeholder='Upload Load' onChange={uploadFile}/>
+                        <label className="form-label" htmlFor="form3Example3">
+                         Image
+                        </label>
+                      </div>
                       {/* Password input */}
                       <div data-mdb-input-init="" className="form-outline mb-4">
                         <input
@@ -125,7 +150,10 @@ const Addprofile = () => {
                          Description
                         </label>
                       </div>
+                      
                       {/* Submit button */}
+
+                      
                       <button
                         type='submit'
                         data-mdb-button-init=""
@@ -141,49 +169,9 @@ const Addprofile = () => {
             </div>
           </div>
         </section>
-        {/* Section: Design Block */}
-      </>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  )
-}
+        </>
+    
+          )}
+        
 
 export default Addprofile

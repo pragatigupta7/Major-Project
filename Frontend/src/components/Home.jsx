@@ -8,14 +8,44 @@ import Google from '../assets/client/clients/google.svg'
 import spotify from '../assets/client/clients/spotify.svg'
 import Amazon from '../assets/client/clients/amazon.svg'
 import { Link } from 'react-router-dom'
-import header from '../assets/Logo.png'
 import apple from '../assets/apple.jpeg'
+import header from '../assets/Logo.png'
 import insta from '../assets/instagram.svg'
 import fb from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import yt from '../assets/youtube.svg'
+import useUserContext from '../UserContext' 
 
 const Home = () => {
+  const{loggedIn,logout} = useUserContext();
+  console.log(loggedIn)
+  const showLoggedin = ()=>{
+    if(loggedIn){
+      return(
+        <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
+          <li className="nav-item">
+            <button style={{fontFamily:'cursive'}}className='btn btn-danger ms-3 ' onClick={logout}>
+              Logout
+            </button>
+          </li>
+        </ul>
+      );
+    }else{
+      return <div >
+         <ul className="navbar-nav mt-2 mt-lg-0">
+            <li className="nav-item mr-2 mb-3 mb-lg-0">
+              <Link className="btn btn-secondary" to="/Signup">
+                Sign up
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="btn btn-secondary" to="/Login">
+                Login
+              </Link>
+            </li>
+          </ul>
+      </div>
+    }}
   return (
     <>
 
@@ -48,7 +78,7 @@ const Home = () => {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle"to="#"id="pagesMenu"data-toggle="dropdown"aria-haspopup="true"aria-expanded="false">
+              <Link className="nav-link dropdown-toggle"to="/404"id="pagesMenu"data-toggle="dropdown"aria-haspopup="true"aria-expanded="false">
                 Pages
               </Link>
               <div className="dropdown-menu" aria-labelledby="pagesMenu">
@@ -84,22 +114,10 @@ const Home = () => {
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav mt-2 mt-lg-0">
-            <li className="nav-item mr-2 mb-3 mb-lg-0" id='signup'>
-              <Link className="btn btn-secondary" to="/Signup">
-                Sign up
-              </Link>
-            </li>
-            <li className="nav-item" id='signup'>
-              <Link className="btn btn-secondary" to="/Login">
-                Login
-              </Link>
-            </li>
-          </ul>
+          {showLoggedin()}
+         
         </div>
-      </nav>
-    
-     
+      </nav>  
       <div className="header-content">
         <div className="row">
           <div className="col-md-6">

@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import "../components/Profilelisting.css"
 
 const Profilelisting = () => {
     const [profiles,setProfile] = useState([])
@@ -18,18 +19,21 @@ const Profilelisting = () => {
     },[]);
     const displayProfile = ()=>{
         return profiles.map((item) => (
+          
         <div className="bbb"  >
-          <div className="container">
-       <section className="mx-auto my-5" style={{ maxWidth: '50rem'}}>
-    <div className="card">
+          <div className="container" style={{display:'flex',flexDirection:'column'}}>
+          
+       <section className="mx-auto my-1" style={{ maxWidth: '50rem'}}>
+    <div className="card "style={{}}>
       <div
         className="bg-image hover-overlay ripple"
         data-mdb-ripple-color="light"
       >
-        <img
+       {/* <img
           src="https://th.bing.com/th?id=OIP.EuZQ185l0JM20rm3ck9mcQHaD_&w=340&h=183&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
           className="img-fluid"
-        />
+        />*/}
+        <img   src={"http://localhost:5000/"+item.image} alt="img" style={{height:'170px',width:'250px'}}/>
         <Link to="#!">
           <div
             className="mask"
@@ -38,6 +42,7 @@ const Profilelisting = () => {
         </Link>
       </div>
       <div className="card-body">
+      
         <h5 className="card-title font-weight-bold">
         {item.name}
         </h5>
@@ -56,7 +61,8 @@ const Profilelisting = () => {
     </div>
   </section>
 </div>
-</div>  
+</div> 
+
  ))
 }     
         {/* <div className="container ">
@@ -72,11 +78,12 @@ const Profilelisting = () => {
         </div>*/}
              
   return (
-    <div>
-      <header className='bg-body-tertiary'>
-        <div className='container py-5'>
-            <p className='text-center fw-bold'>All Products</p>
+    <div className='head'>
+      <header className='bg-body-tertiary'  style={{fontSize:'50px',fontFamily:'cursive',marginTop:'3%'}}>
+        <div className='container '>
+            <p className='text-center  '>All Products</p>
             <input type='text' placeholder='Search product' className='form-control w-75 m-auto'/>
+            
         </div>
       </header>
       <div className="container mt-5">
@@ -85,6 +92,8 @@ const Profilelisting = () => {
         </div>
       </div>
     </div>
+  
+   
   )
   
 }

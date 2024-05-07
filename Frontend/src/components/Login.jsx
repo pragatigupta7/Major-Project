@@ -3,6 +3,7 @@ import login from '../assets/login.png'
 import { Link } from 'react-router-dom'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
+import useUserContext from '../UserContext'   //for change in login button into logout button
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string()
@@ -14,6 +15,9 @@ const LoginSchema = Yup.object().shape({
   .max(15, 'Password must be at most 15 characters')
 })
 const Login = () => {
+//logout
+const{setLoggedIn} = useUserContext();
+  //logout
   // step 1: formik initialization
   const loginForm = useFormik({
     initialValues: {
@@ -33,11 +37,14 @@ const Login = () => {
         action.resetForm()
   
         if(res.status===200){
-          enqueueSnackbar('Signup successful',{variant:'success'})
-      }else{
-        enqueueSnackbar('Signup failed',{variant:'error'})
-      }
+          enqueueSnackbar('Login successful',{variant:'success'})
+      
+      }setLoggedIn(true);
+      const data = await res.json();
+      console.log(data);  //to save user data in sesson ,inbuilt api-sessionstorage
+      sessionStorage.setItem('user',JSON.stringify(data))
       },
+    
       validationSchema: LoginSchema
   })
   return (
@@ -87,7 +94,7 @@ const Login = () => {
                         type="checkbox"defaultValue="" id="keepLogin"/>
                       <label className="form-check-label" htmlFor="keepLogin"> keep me login </label>
                     </div>
-                    <Link href="#!" className="forgot-password-link">
+                    <Link to="/Forgetpassword" className="forgot-password-link">
                       Forgot password?
                     </Link>
                   </div>

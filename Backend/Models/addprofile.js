@@ -4,6 +4,7 @@ const addprofileSchema = new Schema({
     email:String,
     companyname:String,
     contactnumber:String,
+    image: String,
     description:String
 });
 module.exports = model('addprofile',addprofileSchema)

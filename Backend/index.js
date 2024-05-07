@@ -5,6 +5,7 @@ const cors = require('cors');
 const userRouter =require('./Routers/user');
 const addprofileRouter =require('./Routers/addprofile');
 const contactRouter =require('./Routers/contact');
+const UtilRouter = require('./Routers/utils');
 
 app.use(cors({
     origin:['http://localhost:5173']
@@ -14,6 +15,8 @@ app.use(express.json());
 app.use('/user',userRouter);
 app.use('/addprofile',addprofileRouter);
 app.use('/contact',contactRouter)
+app.use('/util', UtilRouter);
+app.use(express.static('./Uploads'));
 
 app.listen(port, ()=>{
     console.log(`server is running on port ${port}`);
