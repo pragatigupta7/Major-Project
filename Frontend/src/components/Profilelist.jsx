@@ -28,7 +28,7 @@ const Profilelist = () => {
             {item.name}
             </div>
             <article className="postcard light blue" >
-                <Link className="postcard__img_link" to="#">
+                <Link className="postcard__img_link" to="/view/ + item._id">
                     <img   src={"http://localhost:5000/"+item.image } alt="img"  style={{width:'500px',height:'400px'}}/>
                 </Link>
                 <div className="postcard__text t-white">

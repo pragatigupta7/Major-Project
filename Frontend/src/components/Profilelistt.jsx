@@ -36,8 +36,10 @@ const Profilelistt = () => {
                         <i className="fa-solid fa-phone t-dark"></i>
                             {item.contactnumber}
                         </li>
+
                        
                     </ul>
+                    <Link to='/view/ + item._id' >Know More</Link>
             </Link>
            {/*} <a href="#" className="card-item">
               <img src="images/designer.jpg" alt="Card Image" />

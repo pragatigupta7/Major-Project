@@ -1,9 +1,10 @@
 import React from 'react'
 import login from '../assets/login.png'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
 import useUserContext from '../UserContext'   //for change in login button into logout button
+import { enqueueSnackbar } from 'notistack';
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string()
@@ -38,6 +39,7 @@ const{setLoggedIn} = useUserContext();
   
         if(res.status===200){
           enqueueSnackbar('Login successful',{variant:'success'})
+          
       
       }setLoggedIn(true);
       const data = await res.json();

@@ -24,6 +24,9 @@ import AdminDashboard from './Admin/AdminDashboard'
 import Admin from '../src/Admin/AdminDashboard'
 import ForgetPassword from './components/Forgetpassword'
 
+import View from './components/view'
+import Digitalmarketing from './components/Digitalmarketing'
+
 
 const App = () => {
   return (
@@ -51,6 +54,9 @@ const App = () => {
        <Route path='/Profilelist' element={<Profilelist/>}/>
        <Route path='/Profilelistt' element={<Profilelistt/>}/>
        <Route path="Forgetpassword" element={<ForgetPassword />} />
+       <Route path="Digitalmarketing" element={<Digitalmarketing />} />
+       
+       <Route path='/View/:id' element={<View/>} />
 
        <Route path="/Admin" element={<Admin/>}>
         <Route path="ProfileEditing" element={<ProfileEditing />} />
