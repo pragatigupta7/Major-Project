@@ -22,16 +22,16 @@ const Profilelist = () => {
         return profiles.map((item) => ( 
             <div className="main">                     
    <section className="light">
-        <div className="container py-2" >
+        <div className="container " >
             
-            <div className="h1 text-center text-white" id="pageHeaderTitle">
+            <div className="h1 text-center text-black" id="pageHeaderTitle">
             {item.name}
             </div>
             <article className="postcard light blue" >
-                <Link className="postcard__img_link" to="/view/ + item._id">
+                <Link className="postcard__img_link" to={"/view/" + item._id}>
                     <img   src={"http://localhost:5000/"+item.image } alt="img"  style={{width:'500px',height:'400px'}}/>
-                </Link>
-                <div className="postcard__text t-white">
+
+                <div className="postcard__text t-black">
                     <h1 className="postcard__title blue">
                         <Link to="#">{item.name}</Link>
                     </h1>
@@ -40,10 +40,10 @@ const Profilelist = () => {
                     {item.companyname}</h1>
                     </div>
                     <div className="postcard__bar" />
-                    <div className="postcard__preview-txt t-white">
+                    <div className="postcard__preview-txt t-black">
                     {item.description}
                     </div>
-                    <ul className="postcard__tagbox t-white">
+                    <ul className="postcard__tagbox t-black">
                         <li className="tag__item">
                         <i className="fa-solid fa-envelope t-dark"></i>
                             {item.email}
@@ -52,9 +52,10 @@ const Profilelist = () => {
                         <i className="fa-solid fa-phone t-dark"></i>
                             {item.contactnumber}
                         </li>
-                       
+                       <button className="tag__item t-white">Read More</button>
                     </ul>
                 </div>
+                </Link>
             </article>
        </div>
        </section>
@@ -100,8 +101,8 @@ return (
 </div>
 </header>
    
-      <div className="contain mt-5">
-        <div className="row mt-5 p-5">
+      <div className="contain ">
+        <div className="row  p-5">
         {displayProfile()}
         </div>
       </div>

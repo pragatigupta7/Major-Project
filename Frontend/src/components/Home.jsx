@@ -9,6 +9,8 @@ import spotify from '../assets/client/clients/spotify.svg'
 import Amazon from '../assets/client/clients/amazon.svg'
 import { Link } from 'react-router-dom'
 import apple from '../assets/apple.jpeg'
+import DM from '../assets/DM.jpeg'
+import it from '../assets/it.jpeg'
 import header from '../assets/Logo.png'
 import insta from '../assets/instagram.svg'
 import fb from '../assets/facebook.svg'
@@ -77,40 +79,45 @@ const Home = () => {
                 Features
               </Link>
             </li>
-            <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle"to="/404"id="pagesMenu"data-toggle="dropdown"aria-haspopup="true"aria-expanded="false">
+          <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle"  to="/404" id="pagesMenu"data-toggle="dropdown">
                 Pages
               </Link>
               <div className="dropdown-menu" aria-labelledby="pagesMenu">
-                <a className="dropdown-item" href="blog.html">
+                <Link className="dropdown-item" to="#">
                   Blog
-                </a>
-                <a className="dropdown-item" href="login.html">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Login
-                </a>
-                <a className="dropdown-item" href="register.html">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Register
-                </a>
-                <a className="dropdown-item" href="faq.html">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   FAQ
-                </a>
-                <a className="dropdown-item" href="404.html">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   404
-                </a>
-                <a className="dropdown-item" href="careers.html">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Careers
-                </a>
-                <a className="dropdown-item" href="blog-single.html">
+                </Link>
+                <Link className="dropdown-item" to="#">
                   Single blog
-                </a>
-                <a className="dropdown-item" href="privacy-policy.html">
+                </Link>
+                <Link className="dropdown-item" href="privacy-policy.html">
                   Privacy policy
-                </a>
+                </Link>
               </div>
-            </li>
+  </li>
             <li className="nav-item">
               <Link className="nav-link" to="/Contact">
                 Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Profilelistt">
+                Profilelist
               </Link>
             </li>
           </ul>
@@ -314,19 +321,19 @@ const Home = () => {
 <section>
   <div className="wrapper">
   <div className="cardd">
-  <img src={apple} alt="logo" />
+  <img src={DM} alt="logo" />
     <div className="info">
-      <h1>Apple</h1>
+      <h1>Digital Marketing</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, corporis!</p>
-      <Link to="/Arsha" className="btnn">
+      <Link to="/DM" className="btnn">
         Read More
       </Link>
     </div>
   </div>
   <div className="cardd">
-  <img src={apple} alt="logo" />
+  <img src={it} alt="logo" />
     <div className="info">
-      <h1>Snowflake</h1>
+      <h1>IT</h1>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo!</p>
       <Link to="/Profile2" className="btnn">
         Read More
@@ -334,11 +341,11 @@ const Home = () => {
     </div>
   </div>
   <div className="cardd">
-  <img src={apple} alt="logo" />
+  <img src={DM} alt="logo" />
     <div className="info">
-      <h1>Heading</h1>
+      <h1>Digital marketing</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, magni?</p>
-      <Link to="#" className="btnn">
+      <Link to="/Digitalmarketing" className="btnn">
         Read More
       </Link>
     </div>

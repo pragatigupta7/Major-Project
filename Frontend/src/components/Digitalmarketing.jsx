@@ -3,999 +3,518 @@ import React from 'react'
 const Digitalmarketing = () => {
   return (
     <div>
-      <div className="container-xxl bg-white p-0">
-  {/* Spinner Start */}
-  <div
-    id="spinner"
-    className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-  >
-    <div
-      className="spinner-grow text-primary"
-      style={{ width: "3rem", height: "3rem" }}
-      role="status"
-    >
-      <span className="sr-only">Loading...</span>
+      <>
+  {/*<div id="js-preloader" className="js-preloader">
+    <div className="preloader-inner">
+      <span className="dot" />
+      <div className="dots">
+        <span />
+        <span />
+        <span />
+      </div>
     </div>
   </div>
-  {/* Spinner End */}
-  {/* Navbar & Hero Start */}
-  <div className="container-xxl position-relative p-0">
-    <nav className="navbarr navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-      <a href="#" className="navbar-brand p-0">
-        <h1 className="m-0">DGital</h1>
-        {/* <img src="img/logo.png" alt="Logo"> */}
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span className="fa fa-bars" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <div className="navbarr-nav mx-auto py-0">
-          <a href="index.html" className="nav-item nav-link active">
-            Home
-          </a>
-          <a href="about.html" className="nav-item nav-link">
-            About
-          </a>
-          <a href="service.html" className="nav-item nav-link">
-            Service
-          </a>
-          <a href="project.html" className="nav-item nav-link">
-            Project
-          </a>
-          <div className="nav-item dropdown">
-            <a
-              href="#"
-              className="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              Pages
-            </a>
-            <div className="dropdown-menu m-0">
-              <a href="team.html" className="dropdown-item">
-                Our Team
-              </a>
-              <a href="testimonial.html" className="dropdown-item">
-                Testimonial
-              </a>
-              <a href="404.html" className="dropdown-item">
-                404 Page
-              </a>
-            </div>
+  {/* ***** Preloader End ***** */}
+  {/* ***** Pre-Header Area Start ***** */}
+  <div className="pre-header">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-8 col-sm-9">
+          <div className="left-info">
+            <ul>
+              <li>
+                <a href="#">
+                  <i className="fa fa-phone" />
+                  +000 1234 5678
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fa fa-envelope" />
+                  infocompany@email.com
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fa fa-map-marker" />
+                  St. London 54th Bull
+                </a>
+              </li>
+            </ul>
           </div>
-          <a href="contact.html" className="nav-item nav-link">
-            Contact
-          </a>
         </div>
-        <a
-          href=""
-          className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-        >
-          Get Started
-        </a>
-      </div>
-    </nav>
-    <div className="container-xxl bg-primary hero-header">
-      <div className="container px-lg-5">
-        <div className="row g-5 align-items-end">
-          <div className="col-lg-6 text-center text-lg-start">
-            <h1 className="text-white mb-4 animated slideInDown">
-              A Digital Agency Of Inteligents &amp; Creative People
-            </h1>
-            <p className="text-white pb-3 animated slideInDown">
-              Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet
-              dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam
-              sit justo amet ipsum vero ipsum clita lorem
-            </p>
-            <a
-              href=""
-              className="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft"
-            >
-              Read More
-            </a>
-            <a
-              href=""
-              className="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
-            >
-              Contact Us
-            </a>
-          </div>
-          <div className="col-lg-6 text-center text-lg-start">
-            <img
-              className="img-fluid animated zoomIn"
-              src="img/hero.png"
-              alt=""
-            />
+        <div className="col-lg-4 col-sm-3">
+          <div className="social-icons">
+            <ul>
+              <li>
+                <a href="#">
+                  <i className="fab fa-facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fab fa-google-plus" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  {/* Navbar & Hero End */}
-  {/* Feature Start */}
-  <div className="container-xxl py-5">
-    <div className="container py-5 px-lg-5">
-      <div className="row g-4">
-        <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-          <div className="feature-item bg-light rounded text-center p-4">
-            <i className="fa fa-3x fa-mail-bulk text-primary mb-4" />
-            <h5 className="mb-3">Digital Marketing</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-          </div>
+  {/* ***** Pre-Header Area End ***** */}
+  {/* ***** Header Area Start ***** */}
+  <header className="header-area header-sticky">
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+          <nav className="main-nav">
+            {/* ***** Logo Start ***** */}
+            <a href="index.html" className="logo">
+              <img
+                src="assets/images/logo.png"
+                alt=""
+                style={{ maxWidth: 112 }}
+              />
+            </a>
+            {/* ***** Logo End ***** */}
+            {/* ***** Menu Start ***** */}
+            <ul className="nav">
+              <li className="scroll-to-section">
+                <a href="#top" className="active">
+                  Home
+                </a>
+              </li>
+              <li className="scroll-to-section">
+                <a href="#services">Services</a>
+              </li>
+              <li className="scroll-to-section">
+                <a href="#projects">Projects</a>
+              </li>
+              <li className="has-sub">
+                <a href="javascript:void(0)">Pages</a>
+                <ul className="sub-menu">
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="faqs.html">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <li className="scroll-to-section">
+                <a href="#infos">Infos</a>
+              </li>
+              <li className="scroll-to-section">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a className="menu-trigger">
+              <span>Menu</span>
+            </a>
+            {/* ***** Menu End ***** */}
+          </nav>
         </div>
-        <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-          <div className="feature-item bg-light rounded text-center p-4">
-            <i className="fa fa-3x fa-search text-primary mb-4" />
-            <h5 className="mb-3">SEO &amp; Backlinks</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
+      </div>
+    </div>
+  </header>
+  {/* ***** Header Area End ***** */}
+  <div className="main-banner" id="top">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-7">
+          <div className="caption header-text">
+            <h6>SEO DIGITAL AGENCY</h6>
+            <div className="line-dec" />
+            <h4>
+              Dive <em>Into The SEO</em> World <span>With Tale</span>
+            </h4>
+            <p>
+              Tale is the best SEO agency website template using Bootstrap
+              v5.2.2 CSS for your company. It is a free download provided by
+              TemplateMo. There are 3 HTML pages, <a href="index.html">Home</a>,{" "}
+              <a href="about.html">About</a>, and <a href="faqs.html">FAQ</a>.
             </p>
-          </div>
-        </div>
-        <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-          <div className="feature-item bg-light rounded text-center p-4">
-            <i className="fa fa-3x fa-laptop-code text-primary mb-4" />
-            <h5 className="mb-3">Design &amp; Development</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
+            <div className="main-button scroll-to-section">
+              <a href="#services">Discover More</a>
+            </div>
+            <span>or</span>
+            <div className="second-button">
+              <a href="faqs.html">Check our FAQs</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  {/* Feature End */}
-  {/* About Start */}
-  <div className="container-xxl py-5">
-    <div className="container py-5 px-lg-5">
-      <div className="row g-5 align-items-center">
-        <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <p className="section-title text-secondary">
-            About Us
-            <span />
-          </p>
-          <h1 className="mb-5">
-            #1 Digital solution with 10 years of experience
-          </h1>
-          <p className="mb-4">
-            Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-            labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem
-            sit clita duo justo eirmod magna dolore erat amet
-          </p>
-          <div className="skill mb-4">
-            <div className="d-flex justify-content-between">
-              <p className="mb-2">Digital Marketing</p>
-              <p className="mb-2">85%</p>
+  <div className="services section" id="services">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-6 offset-lg-6">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-heading">
+                <h2>
+                  We Provide <em>Different Services</em> &amp;
+                  <span>Features</span> For Your Agency
+                </h2>
+                <div className="line-dec" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  doers eiusmod.
+                </p>
+              </div>
             </div>
-            <div className="progress">
-              <div
-                className="progress-bar bg-primary"
-                role="progressbar"
-                aria-valuenow={85}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              />
+            <div className="col-lg-6 col-sm-6">
+              <div className="service-item">
+                <div className="icon">
+                  <img
+                    src="assets/images/services-01.jpg"
+                    alt="discover SEO"
+                    className="templatemo-feature"
+                  />
+                </div>
+                <h4>Discover More on Latest SEO Trends</h4>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-6">
+              <div className="service-item">
+                <div className="icon">
+                  <img
+                    src="assets/images/services-02.jpg"
+                    alt="data analysis"
+                    className="templatemo-feature"
+                  />
+                </div>
+                <h4>Real-Time Big Data Analysis</h4>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-6">
+              <div className="service-item">
+                <div className="icon">
+                  <img
+                    src="assets/images/services-03.jpg"
+                    alt="precise data"
+                    className="templatemo-feature"
+                  />
+                </div>
+                <h4>Precise Data Analysis &amp; Prediction</h4>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-6">
+              <div className="service-item">
+                <div className="icon">
+                  <img
+                    src="assets/images/services-04.jpg"
+                    alt="SEO marketing"
+                    className="templatemo-feature"
+                  />
+                </div>
+                <h4>SEO Marketing &amp; Social Media</h4>
+              </div>
             </div>
           </div>
-          <div className="skill mb-4">
-            <div className="d-flex justify-content-between">
-              <p className="mb-2">SEO &amp; Backlinks</p>
-              <p className="mb-2">90%</p>
-            </div>
-            <div className="progress">
-              <div
-                className="progress-bar bg-secondary"
-                role="progressbar"
-                aria-valuenow={90}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              />
-            </div>
-          </div>
-          <div className="skill mb-4">
-            <div className="d-flex justify-content-between">
-              <p className="mb-2">Design &amp; Development</p>
-              <p className="mb-2">95%</p>
-            </div>
-            <div className="progress">
-              <div
-                className="progress-bar bg-dark"
-                role="progressbar"
-                aria-valuenow={95}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              />
-            </div>
-          </div>
-          <a
-            href=""
-            className="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3"
-          >
-            Read More
-          </a>
         </div>
+      </div>
+    </div>
+  </div>
+  <div className="projects section" id="projects">
+    <div className="container">
+      <div className="row">
         <div className="col-lg-6">
-          <img
-            className="img-fluid wow zoomIn"
-            data-wow-delay="0.5s"
-            src="img/about.png"
-          />
+          <div className="section-heading">
+            <h2>
+              Discover Our <em>Work</em> &amp; <span>Projects</span>
+            </h2>
+            <div className="line-dec" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers
+              eiusmod.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="owl-features owl-carousel">
+            <div className="item">
+              <img src="assets/images/projects-01.jpg" alt="" />
+              <div className="down-content">
+                <h4>Digital Agency HTML Templates</h4>
+                <a href="#">
+                  <i className="fa fa-link" />
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <img src="assets/images/projects-02.jpg" alt="" />
+              <div className="down-content">
+                <h4>Admin Dashboard CSS Templates</h4>
+                <a href="#">
+                  <i className="fa fa-link" />
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <img src="assets/images/projects-03.jpg" alt="" />
+              <div className="down-content">
+                <h4>Best Responsive Website Layouts</h4>
+                <a href="#">
+                  <i className="fa fa-link" />
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <img src="assets/images/projects-04.jpg" alt="" />
+              <div className="down-content">
+                <h4>HTML CSS Layouts for your websites</h4>
+                <a href="#">
+                  <i className="fa fa-link" />
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <img src="assets/images/projects-02.jpg" alt="" />
+              <div className="down-content">
+                <h4>Bootstrap 5 Themes for Free</h4>
+                <a href="#">
+                  <i className="fa fa-link" />
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <img src="assets/images/projects-03.jpg" alt="" />
+              <div className="down-content">
+                <h4>Mobile Friendly Website Layouts</h4>
+                <a href="#">
+                  <i className="fa fa-link" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  {/* About End */}
-  {/* Facts Start */}
-  <div
-    className="container-xxl bg-primary fact py-5 wow fadeInUp"
-    data-wow-delay="0.1s"
-  >
-    <div className="container py-5 px-lg-5">
-      <div className="row g-4">
-        <div
-          className="col-md-6 col-lg-3 text-center wow fadeIn"
-          data-wow-delay="0.1s"
-        >
-          <i className="fa fa-certificate fa-3x text-secondary mb-3" />
-          <h1 className="text-white mb-2" data-toggle="counter-up">
-            1234
-          </h1>
-          <p className="text-white mb-0">Years Experience</p>
-        </div>
-        <div
-          className="col-md-6 col-lg-3 text-center wow fadeIn"
-          data-wow-delay="0.3s"
-        >
-          <i className="fa fa-users-cog fa-3x text-secondary mb-3" />
-          <h1 className="text-white mb-2" data-toggle="counter-up">
-            1234
-          </h1>
-          <p className="text-white mb-0">Team Members</p>
-        </div>
-        <div
-          className="col-md-6 col-lg-3 text-center wow fadeIn"
-          data-wow-delay="0.5s"
-        >
-          <i className="fa fa-users fa-3x text-secondary mb-3" />
-          <h1 className="text-white mb-2" data-toggle="counter-up">
-            1234
-          </h1>
-          <p className="text-white mb-0">Satisfied Clients</p>
-        </div>
-        <div
-          className="col-md-6 col-lg-3 text-center wow fadeIn"
-          data-wow-delay="0.7s"
-        >
-          <i className="fa fa-check fa-3x text-secondary mb-3" />
-          <h1 className="text-white mb-2" data-toggle="counter-up">
-            1234
-          </h1>
-          <p className="text-white mb-0">Compleate Projects</p>
+  <div className="infos section" id="infos">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="main-content">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="left-image">
+                  <img src="assets/images/left-infos.jpg" alt="" />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="section-heading">
+                  <h2>
+                    More <em>About Us</em> &amp; What <span>We Offer</span>
+                  </h2>
+                  <div className="line-dec" />
+                  <p>
+                    You are free to use this template for any purpose. You are
+                    not allowed to redistribute the downloadable ZIP file of
+                    Tale SEO Template on any other template website. Please
+                    contact us. Thank you.
+                  </p>
+                </div>
+                <div className="skills">
+                  <div className="skill-slide marketing">
+                    <div className="fill" />
+                    <h6>Marketing</h6>
+                    <span>90%</span>
+                  </div>
+                  <div className="skill-slide digital">
+                    <div className="fill" />
+                    <h6>Ditigal Media</h6>
+                    <span>80%</span>
+                  </div>
+                  <div className="skill-slide media">
+                    <div className="fill" />
+                    <h6>Social Media Managing</h6>
+                    <span>95%</span>
+                  </div>
+                </div>
+                <p className="more-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  doers eiusmod tempor incididunt ut labore et dolore dolor
+                  dolor sit amet, consectetur adipiscing elit, sed doers
+                  eiusmod.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  {/* Facts End */}
-  {/* Service Start */}
-  <div className="container-xxl py-5">
-    <div className="container py-5 px-lg-5">
-      <div className="wow fadeInUp" data-wow-delay="0.1s">
-        <p className="section-title text-secondary justify-content-center">
-          <span />
-          Our Services
-          <span />
+  <div className="contact-us section" id="contact">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="contact-us-content">
+            <div className="row">
+              <div className="col-lg-4">
+                <div id="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth"
+                    width="100%"
+                    height="670px"
+                    frameBorder={0}
+                    style={{ border: 0, borderRadius: 23 }}
+                    allowFullScreen=""
+                  />
+                </div>
+              </div>
+              <div className="col-lg-8">
+                <form id="contact-form" action="" method="post">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="section-heading">
+                        <h2>
+                          <em>Contact Us</em> &amp; Get In <span>Touch</span>
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <fieldset>
+                        <input
+                          type="name"
+                          name="name"
+                          id="name"
+                          placeholder="Your Name..."
+                          autoComplete="on"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div className="col-lg-6">
+                      <fieldset>
+                        <input
+                          type="surname"
+                          name="surname"
+                          id="surname"
+                          placeholder="Your Surname..."
+                          autoComplete="on"
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div className="col-lg-6">
+                      <fieldset>
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          pattern="[^ @]*@[^ @]*"
+                          placeholder="Your E-mail..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div className="col-lg-6">
+                      <fieldset>
+                        <input
+                          type="subject"
+                          name="subject"
+                          id="subject"
+                          placeholder="Subject..."
+                          autoComplete="on"
+                        />
+                      </fieldset>
+                    </div>
+                    <div className="col-lg-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          id="message"
+                          placeholder="Your Message"
+                          defaultValue={""}
+                        />
+                      </fieldset>
+                    </div>
+                    <div className="col-lg-12">
+                      <fieldset>
+                        <button
+                          type="submit"
+                          id="form-submit"
+                          className="orange-button"
+                        >
+                          Send Message Now
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+                <div className="more-info">
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <div className="info-item">
+                        <i className="fa fa-phone" />
+                        <h4>
+                          <a href="#">010-020-0340</a>
+                        </h4>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="info-item">
+                        <i className="fa fa-envelope" />
+                        <h4>
+                          <a href="#">info@company.com</a>
+                        </h4>
+                        <h4>
+                          <a href="#">hello@company.com</a>
+                        </h4>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div className="info-item">
+                        <i className="fa fa-map-marker" />
+                        <h4>
+                          <a href="#">
+                            Sunny Isles Beach, FL 33160, United States
+                          </a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div className="container">
+      <div className="col-lg-12">
+        <p>
+          Copyright © 2036 <a href="#">Tale SEO Agency</a>. All rights reserved.
+          <br />
+          Design:{" "}
+          <a href="https://templatemo.com" target="_blank">
+            TemplateMo
+          </a>
         </p>
-        <h1 className="text-center mb-5">What Solutions We Provide</h1>
-      </div>
-      <div className="row g-4">
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div className="service-item d-flex flex-column text-center rounded">
-            <div className="service-icon flex-shrink-0">
-              <i className="fa fa-search fa-2x" />
-            </div>
-            <h5 className="mb-3">SEO Optimization</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-            <a className="btn btn-square" href="">
-              <i className="fa fa-arrow-right" />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div className="service-item d-flex flex-column text-center rounded">
-            <div className="service-icon flex-shrink-0">
-              <i className="fa fa-laptop-code fa-2x" />
-            </div>
-            <h5 className="mb-3">Web Design</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-            <a className="btn btn-square" href="">
-              <i className="fa fa-arrow-right" />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div className="service-item d-flex flex-column text-center rounded">
-            <div className="service-icon flex-shrink-0">
-              <i className="fab fa-facebook-f fa-2x" />
-            </div>
-            <h5 className="mb-3">Social Media Marketing</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-            <a className="btn btn-square" href="">
-              <i className="fa fa-arrow-right" />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div className="service-item d-flex flex-column text-center rounded">
-            <div className="service-icon flex-shrink-0">
-              <i className="fa fa-mail-bulk fa-2x" />
-            </div>
-            <h5 className="mb-3">Email Marketing</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-            <a className="btn btn-square" href="">
-              <i className="fa fa-arrow-right" />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div className="service-item d-flex flex-column text-center rounded">
-            <div className="service-icon flex-shrink-0">
-              <i className="fa fa-thumbs-up fa-2x" />
-            </div>
-            <h5 className="mb-3">PPC Advertising</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-            <a className="btn btn-square" href="">
-              <i className="fa fa-arrow-right" />
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div className="service-item d-flex flex-column text-center rounded">
-            <div className="service-icon flex-shrink-0">
-              <i className="fab fa-android fa-2x" />
-            </div>
-            <h5 className="mb-3">App Development</h5>
-            <p className="m-0">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet lorem.
-            </p>
-            <a className="btn btn-square" href="">
-              <i className="fa fa-arrow-right" />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-  {/* Service End */}
-  {/* Newsletter Start */}
-  <div
-    className="container-xxl bg-primary newsletter py-5 wow fadeInUp"
-    data-wow-delay="0.1s"
-  >
-    <div className="container py-5 px-lg-5">
-      <div className="row justify-content-center">
-        <div className="col-lg-7 text-center">
-          <p className="section-title text-white justify-content-center">
-            <span />
-            Newsletter
-            <span />
-          </p>
-          <h1 className="text-center text-white mb-4">Stay Always In Touch</h1>
-          <p className="text-white mb-4">
-            Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-            labore. Clita erat ipsum et lorem et sit sed stet lorem sit clita
-            duo justo
-          </p>
-          <div className="position-relative w-100 mt-3">
-            <input
-              className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-              type="text"
-              placeholder="Enter Your Email"
-              style={{ height: 48 }}
-            />
-            <button
-              type="button"
-              className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-            >
-              <i className="fa fa-paper-plane text-primary fs-4" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Newsletter End */}
-  {/* Projects Start */}
-  <div className="container-xxl py-5">
-    <div className="container py-5 px-lg-5">
-      <div className="wow fadeInUp" data-wow-delay="0.1s">
-        <p className="section-title text-secondary justify-content-center">
-          <span />
-          Our Projects
-          <span />
-        </p>
-        <h1 className="text-center mb-5">Recently Completed Projects</h1>
-      </div>
-      <div className="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-        <div className="col-12 text-center">
-          <ul className="list-inline mb-5" id="portfolio-flters">
-            <li className="mx-2 active" data-filter="*">
-              All
-            </li>
-            <li className="mx-2" data-filter=".first">
-              Web Design
-            </li>
-            <li className="mx-2" data-filter=".second">
-              Graphic Design
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="row g-4 portfolio-container">
-        <div
-          className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div className="rounded overflow-hidden">
-            <div className="position-relative overflow-hidden">
-              <img
-                className="img-fluid w-100"
-                src="img/portfolio-1.jpg"
-                alt=""
-              />
-              <div className="portfolio-overlay">
-                <a
-                  className="btn btn-square btn-outline-light mx-1"
-                  href="img/portfolio-1.jpg"
-                  data-lightbox="portfolio"
-                >
-                  <i className="fa fa-eye" />
-                </a>
-                <a className="btn btn-square btn-outline-light mx-1" href="">
-                  <i className="fa fa-link" />
-                </a>
-              </div>
-            </div>
-            <div className="bg-light p-4">
-              <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-              <h5 className="lh-base mb-0">
-                Digital Agency Website Design And Development
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-          data-wow-delay="0.3s"
-        >
-          <div className="rounded overflow-hidden">
-            <div className="position-relative overflow-hidden">
-              <img
-                className="img-fluid w-100"
-                src="img/portfolio-2.jpg"
-                alt=""
-              />
-              <div className="portfolio-overlay">
-                <a
-                  className="btn btn-square btn-outline-light mx-1"
-                  href="img/portfolio-2.jpg"
-                  data-lightbox="portfolio"
-                >
-                  <i className="fa fa-eye" />
-                </a>
-                <a className="btn btn-square btn-outline-light mx-1" href="">
-                  <i className="fa fa-link" />
-                </a>
-              </div>
-            </div>
-            <div className="bg-light p-4">
-              <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-              <h5 className="lh-base mb-0">
-                Digital Agency Website Design And Development
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-          data-wow-delay="0.5s"
-        >
-          <div className="rounded overflow-hidden">
-            <div className="position-relative overflow-hidden">
-              <img
-                className="img-fluid w-100"
-                src="img/portfolio-3.jpg"
-                alt=""
-              />
-              <div className="portfolio-overlay">
-                <a
-                  className="btn btn-square btn-outline-light mx-1"
-                  href="img/portfolio-3.jpg"
-                  data-lightbox="portfolio"
-                >
-                  <i className="fa fa-eye" />
-                </a>
-                <a className="btn btn-square btn-outline-light mx-1" href="">
-                  <i className="fa fa-link" />
-                </a>
-              </div>
-            </div>
-            <div className="bg-light p-4">
-              <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-              <h5 className="lh-base mb-0">
-                Digital Agency Website Design And Development
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div className="rounded overflow-hidden">
-            <div className="position-relative overflow-hidden">
-              <img
-                className="img-fluid w-100"
-                src="img/portfolio-4.jpg"
-                alt=""
-              />
-              <div className="portfolio-overlay">
-                <a
-                  className="btn btn-square btn-outline-light mx-1"
-                  href="img/portfolio-4.jpg"
-                  data-lightbox="portfolio"
-                >
-                  <i className="fa fa-eye" />
-                </a>
-                <a className="btn btn-square btn-outline-light mx-1" href="">
-                  <i className="fa fa-link" />
-                </a>
-              </div>
-            </div>
-            <div className="bg-light p-4">
-              <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-              <h5 className="lh-base mb-0">
-                Digital Agency Website Design And Development
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-          data-wow-delay="0.3s"
-        >
-          <div className="rounded overflow-hidden">
-            <div className="position-relative overflow-hidden">
-              <img
-                className="img-fluid w-100"
-                src="img/portfolio-5.jpg"
-                alt=""
-              />
-              <div className="portfolio-overlay">
-                <a
-                  className="btn btn-square btn-outline-light mx-1"
-                  href="img/portfolio-5.jpg"
-                  data-lightbox="portfolio"
-                >
-                  <i className="fa fa-eye" />
-                </a>
-                <a className="btn btn-square btn-outline-light mx-1" href="">
-                  <i className="fa fa-link" />
-                </a>
-              </div>
-            </div>
-            <div className="bg-light p-4">
-              <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-              <h5 className="lh-base mb-0">
-                Digital Agency Website Design And Development
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-          data-wow-delay="0.5s"
-        >
-          <div className="rounded overflow-hidden">
-            <div className="position-relative overflow-hidden">
-              <img
-                className="img-fluid w-100"
-                src="img/portfolio-6.jpg"
-                alt=""
-              />
-              <div className="portfolio-overlay">
-                <a
-                  className="btn btn-square btn-outline-light mx-1"
-                  href="img/portfolio-6.jpg"
-                  data-lightbox="portfolio"
-                >
-                  <i className="fa fa-eye" />
-                </a>
-                <a className="btn btn-square btn-outline-light mx-1" href="">
-                  <i className="fa fa-link" />
-                </a>
-              </div>
-            </div>
-            <div className="bg-light p-4">
-              <p className="text-primary fw-medium mb-2">UI / UX Design</p>
-              <h5 className="lh-base mb-0">
-                Digital Agency Website Design And Development
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Projects End */}
-  {/* Testimonial Start */}
-  <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div className="container py-5 px-lg-5">
-      <p className="section-title text-secondary justify-content-center">
-        <span />
-        Testimonial
-        <span />
-      </p>
-      <h1 className="text-center mb-5">What Say Our Clients!</h1>
-      <div className="owl-carousel testimonial-carousel">
-        <div className="testimonial-item bg-light rounded my-4">
-          <p className="fs-5">
-            <i className="fa fa-quote-left fa-4x text-primary mt-n4 me-3" />
-            Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-            ipsum et lorem et sit sed stet lorem sit clita duo justo.
-          </p>
-          <div className="d-flex align-items-center">
-            <img
-              className="img-fluid flex-shrink-0 rounded-circle"
-              src="img/testimonial-1.jpg"
-              style={{ width: 65, height: 65 }}
-            />
-            <div className="ps-4">
-              <h5 className="mb-1">Client Name</h5>
-              <span>Profession</span>
-            </div>
-          </div>
-        </div>
-        <div className="testimonial-item bg-light rounded my-4">
-          <p className="fs-5">
-            <i className="fa fa-quote-left fa-4x text-primary mt-n4 me-3" />
-            Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-            ipsum et lorem et sit sed stet lorem sit clita duo justo.
-          </p>
-          <div className="d-flex align-items-center">
-            <img
-              className="img-fluid flex-shrink-0 rounded-circle"
-              src="img/testimonial-2.jpg"
-              style={{ width: 65, height: 65 }}
-            />
-            <div className="ps-4">
-              <h5 className="mb-1">Client Name</h5>
-              <span>Profession</span>
-            </div>
-          </div>
-        </div>
-        <div className="testimonial-item bg-light rounded my-4">
-          <p className="fs-5">
-            <i className="fa fa-quote-left fa-4x text-primary mt-n4 me-3" />
-            Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-            ipsum et lorem et sit sed stet lorem sit clita duo justo.
-          </p>
-          <div className="d-flex align-items-center">
-            <img
-              className="img-fluid flex-shrink-0 rounded-circle"
-              src="img/testimonial-3.jpg"
-              style={{ width: 65, height: 65 }}
-            />
-            <div className="ps-4">
-              <h5 className="mb-1">Client Name</h5>
-              <span>Profession</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Testimonial End */}
-  {/* Team Start */}
-  <div className="container-xxl py-5">
-    <div className="container py-5 px-lg-5">
-      <div className="wow fadeInUp" data-wow-delay="0.1s">
-        <p className="section-title text-secondary justify-content-center">
-          <span />
-          Our Team
-          <span />
-        </p>
-        <h1 className="text-center mb-5">Our Team Members</h1>
-      </div>
-      <div className="row g-4">
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div className="team-item bg-light rounded">
-            <div className="text-center border-bottom p-4">
-              <img
-                className="img-fluid rounded-circle mb-4"
-                src="img/team-1.jpg"
-                alt=""
-              />
-              <h5>John Doe</h5>
-              <span>CEO &amp; Founder</span>
-            </div>
-            <div className="d-flex justify-content-center p-4">
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-twitter" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-instagram" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div className="team-item bg-light rounded">
-            <div className="text-center border-bottom p-4">
-              <img
-                className="img-fluid rounded-circle mb-4"
-                src="img/team-2.jpg"
-                alt=""
-              />
-              <h5>Jessica Brown</h5>
-              <span>Web Designer</span>
-            </div>
-            <div className="d-flex justify-content-center p-4">
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-twitter" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-instagram" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div className="team-item bg-light rounded">
-            <div className="text-center border-bottom p-4">
-              <img
-                className="img-fluid rounded-circle mb-4"
-                src="img/team-3.jpg"
-                alt=""
-              />
-              <h5>Tony Johnson</h5>
-              <span>SEO Expert</span>
-            </div>
-            <div className="d-flex justify-content-center p-4">
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-twitter" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-instagram" />
-              </a>
-              <a className="btn btn-square mx-1" href="">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Team End */}
-  {/* Footer Start */}
-  <div
-    className="container-fluid bg-primary text-light footer wow fadeIn"
-    data-wow-delay="0.1s"
-  >
-    <div className="container py-5 px-lg-5">
-      <div className="row g-5">
-        <div className="col-md-6 col-lg-3">
-          <p className="section-title text-white h5 mb-4">
-            Address
-            <span />
-          </p>
-          <p>
-            <i className="fa fa-map-marker-alt me-3" />
-            123 Street, New York, USA
-          </p>
-          <p>
-            <i className="fa fa-phone-alt me-3" />
-            +012 345 67890
-          </p>
-          <p>
-            <i className="fa fa-envelope me-3" />
-            info@example.com
-          </p>
-          <div className="d-flex pt-2">
-            <a className="btn btn-outline-light btn-social" href="">
-              <i className="fab fa-twitter" />
-            </a>
-            <a className="btn btn-outline-light btn-social" href="">
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a className="btn btn-outline-light btn-social" href="">
-              <i className="fab fa-instagram" />
-            </a>
-            <a className="btn btn-outline-light btn-social" href="">
-              <i className="fab fa-linkedin-in" />
-            </a>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <p className="section-title text-white h5 mb-4">
-            Quick Link
-            <span />
-          </p>
-          <a className="btn btn-link" href="">
-            About Us
-          </a>
-          <a className="btn btn-link" href="">
-            Contact Us
-          </a>
-          <a className="btn btn-link" href="">
-            Privacy Policy
-          </a>
-          <a className="btn btn-link" href="">
-            Terms &amp; Condition
-          </a>
-          <a className="btn btn-link" href="">
-            Career
-          </a>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <p className="section-title text-white h5 mb-4">
-            Gallery
-            <span />
-          </p>
-          <div className="row g-2">
-            <div className="col-4">
-              <img
-                className="img-fluid"
-                src="img/portfolio-1.jpg"
-                alt="Image"
-              />
-            </div>
-            <div className="col-4">
-              <img
-                className="img-fluid"
-                src="img/portfolio-2.jpg"
-                alt="Image"
-              />
-            </div>
-            <div className="col-4">
-              <img
-                className="img-fluid"
-                src="img/portfolio-3.jpg"
-                alt="Image"
-              />
-            </div>
-            <div className="col-4">
-              <img
-                className="img-fluid"
-                src="img/portfolio-4.jpg"
-                alt="Image"
-              />
-            </div>
-            <div className="col-4">
-              <img
-                className="img-fluid"
-                src="img/portfolio-5.jpg"
-                alt="Image"
-              />
-            </div>
-            <div className="col-4">
-              <img
-                className="img-fluid"
-                src="img/portfolio-6.jpg"
-                alt="Image"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 col-lg-3">
-          <p className="section-title text-white h5 mb-4">
-            Newsletter
-            <span />
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur
-            facilisis ornare velit non vulpu
-          </p>
-          <div className="position-relative w-100 mt-3">
-            <input
-              className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-              type="text"
-              placeholder="Your Email"
-              style={{ height: 48 }}
-            />
-            <button
-              type="button"
-              className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-            >
-              <i className="fa fa-paper-plane text-primary fs-4" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="container px-lg-5">
-      <div className="copyright">
-        <div className="row">
-          <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            ©{" "}
-            <a className="border-bottom" href="#">
-              Your Site Name
-            </a>
-            , All Right Reserved.
-            {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-            Designed By{" "}
-            <a className="border-bottom" href="https://htmlcodex.com">
-              HTML Codex
-            </a>
-            <br />
-            <br />
-            Distributed By a{" "}
-            <a
-              className="border-bottom"
-              href="https://themewagon.com"
-              target="_blank"
-            >
-              ThemeWagon
-            </a>
-          </div>
-          <div className="col-md-6 text-center text-md-end">
-            <div className="footer-menu">
-              <a href="">Home</a>
-              <a href="">Cookies</a>
-              <a href="">Help</a>
-              <a href="">FQAs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Footer End */}
-  {/* Back to Top */}
-  <a href="#" className="btn btn-lg btn-secondary btn-lg-square back-to-top">
-    <i className="bi bi-arrow-up" />
-  </a>
-</div>
+  </footer>
+</>
 
     </div>
   )
