@@ -28,6 +28,7 @@ import View from './components/view'
 import Digitalmarketing from './components/Digitalmarketing'
 import DM from './components/DM'
 import Card from './components/Card'
+import Sidebar from './Admin/Sidebar'
 
 
 
@@ -72,6 +73,7 @@ const App = () => {
        <Route path="/Admin" element={<Admin/>}>
         <Route path="ProfileEditing" element={<ProfileEditing />} />
         <Route path="AdminDashboard" element={<AdminDashboard />} />
+        <Route path="Sidebar" element={<Sidebar />} />
      
 
        </Route>
