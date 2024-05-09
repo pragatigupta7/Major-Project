@@ -34,6 +34,15 @@ router.get('/getbyid/:id',(req,res) => {
         res.status(500).json(err)
     }); 
 });
-
+router.get("/getbycategory/:category", (req,res) => {
+    console.log(req.params.category)
+    Model.find({ category: req.params.category })
+    .then((result) => {
+      res.json(result)
+    }).catch((err) => {
+      console.error(err)
+      res.status(500).json(err)
+     });
+  });
 
 module.exports=router;

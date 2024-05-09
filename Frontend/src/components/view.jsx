@@ -7,6 +7,7 @@ import "../components/view.css"
 const View = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
+  console.log(product)
 
   const fetchProduct = async () => {
     const res = await fetch("http://localhost:5000/addprofile/getbyid/" + id);

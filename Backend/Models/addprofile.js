@@ -5,6 +5,7 @@ const addprofileSchema = new Schema({
     companyname:String,
     contactnumber:String,
     image: String,
-    description:String
+    description:String,
+    category: {type:String, required: true},
 });
 module.exports = model('addprofile',addprofileSchema)

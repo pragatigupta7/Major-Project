@@ -14,20 +14,21 @@ import Arsha from './components/Arsha'
 
 import Profile2 from './components/Profile2'
 import { UserProvider } from '../src/UserContext'
-import Manageuser from './components/Manageuser'
+import Manageuser from './components/Admin/Manageuser'
 import Update from './components/Update'
 import Error from './components/404'
 import Profilelist from './components/Profilelist'
 import Profilelistt from './components/Profilelistt'
-import ProfileEditing from './Admin/ProfileEditing'
-import AdminDashboard from './Admin/AdminDashboard'
-import Admin from '../src/Admin/AdminDashboard'
+// import Admin from '../src/Admin/AdminDashboard'
 import ForgetPassword from './components/Forgetpassword'
 
 import View from './components/view'
 import Digitalmarketing from './components/Digitalmarketing'
 import DM from './components/DM'
 import Card from './components/Card'
+import View2 from './components/View2'
+import AdminDashboard from './components/Admin/AdminDashboard'
+import Admin from './components/Admin/Index'
 
 
 
@@ -53,7 +54,7 @@ const App = () => {
        <Route path='/Arsha' element={<Arsha/>}/>
 
        <Route path='/Profile2' element={<Profile2/>}/>
-       <Route path='/Manageuser' element={<Manageuser/>}/>
+     
        <Route path='/Update/:id' element={<Update/>}/>
        <Route path='/404' element={<Error/>}/>
        <Route path='/Profilelist' element={<Profilelist/>}/>
@@ -62,6 +63,7 @@ const App = () => {
        <Route path="Digitalmarketing" element={<Digitalmarketing />} />
        <Route path="DM" element={<DM/>} />
        <Route path='/View/:id' element={<View/>} />
+       <Route path='/View2/:id' element={<View2/>} />
        <Route path='Card' element={<Card/>} />
       
       
@@ -70,8 +72,9 @@ const App = () => {
 
 
        <Route path="/Admin" element={<Admin/>}>
-        <Route path="ProfileEditing" element={<ProfileEditing />} />
+        {/* <Route path="ProfileEditing" element={<ProfileEditing />} /> */}
         <Route path="AdminDashboard" element={<AdminDashboard />} />
+        <Route path='Manageuser' element={<Manageuser/>}/>
      
 
        </Route>
