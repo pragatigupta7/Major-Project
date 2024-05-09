@@ -20,7 +20,7 @@ const Profilelistt = () => {
     const displayProfile = ()=>{
         return profiles.map((item) => (
             <div className="card-list" style={{display:'flex',flexDirection:"column",width:'400px',height:'300px'}}>
-            <Link to={"/view/"+ item._id} className="card-item">
+            <Link to={"/view2/"+ item._id} className="card-item">
             <img   src={"http://localhost:5000/"+item.image } alt="img"  />
               <span className="developer">  {item.name}</span>
               <br />
@@ -39,7 +39,7 @@ const Profilelistt = () => {
 
                        
                     </ul>
-                    <Link to='/view/ + item._id' >Know More</Link>
+                    {/* <Link to={"/View2/" + item._id} >Know More</Link> */}
             </Link>
            {/*} <a href="#" className="card-item">
               <img src="images/designer.jpg" alt="Card Image" />
