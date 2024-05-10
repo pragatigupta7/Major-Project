@@ -1,5 +1,4 @@
 import React from 'react'
-
 import bannerryt from "../assets/images/banner-right-image.png"
 import left from "../assets/images/about-left-image.png"
 import serviceleft from "../assets/images/services-left-image.png"
@@ -10,7 +9,6 @@ import icon4 from "../assets/images/service-icon-04.png"
 import port from "../assets/images/portfolio-image.png"
 import blog1 from "../assets/images/blog-dec.png"
 import blog2 from "../assets/images/blog-dec.png"
-
 import contact  from "../assets/images/contact-decoration.png"
 import blog4 from "../assets/images/blog-thumb-01.jpg"
 
