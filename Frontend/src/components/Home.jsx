@@ -53,7 +53,7 @@ const Home = () => {
 
 <header className="foi-header landing-header">
     <div className="container">
-      <nav className="navbar navbar-expand-lg navbar-light foi-navbar">
+      <navs className="navbar navbar-expand-lg navbar-light foi-navbar">
         <Link className="navbar-brand" to="#">
         <img src={header} alt="logo" />
         </Link>
@@ -116,7 +116,7 @@ const Home = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/Profilelistt">
+              <Link className="nav-link" to="/Listing">
                 Profilelist
               </Link>
             </li>
@@ -124,7 +124,7 @@ const Home = () => {
           {showLoggedin()}
          
         </div>
-      </nav>  
+      </navs>  
       <div className="header-content">
         <div className="row">
           <div className="col-md-6">

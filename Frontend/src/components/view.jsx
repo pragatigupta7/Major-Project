@@ -6,19 +6,17 @@ import "../components/view.css"
 
 const View = () => {
   const { id } = useParams();
-  const [product, setProduct] = useState({});
-  console.log(product)
-
-  const fetchProduct = async () => {
+  const [profile, setProfile] = useState({});
+  const fetchaddprofile = async () => {
     const res = await fetch("http://localhost:5000/addprofile/getbyid/" + id);
     console.log(res.status);
     if (res.status === 200) {
       const data = await res.json();
       console.log(data);
-      setProduct(data);
+      setProfile(data);
     };
     useEffect(() => {
-      fetchProduct();
+      fetchaddprofile();
     }, []);
   }
 
@@ -48,9 +46,9 @@ const View = () => {
                     data-wow-duration="1s"
                     data-wow-delay="1s"
                   >
-                    <h6>Welcome {product.name}</h6>
+                    <h6>Welcome {profile.name}</h6>
                     <h2>
-                      {product.companyname}
+                      {profile.companyname}
                     </h2>
                   </div>
                 </div>
@@ -77,7 +75,7 @@ const View = () => {
               <i className="fa fa-bar-chart fa-2x mb-3 text-primary" /><h1>ABOUT</h1>
               <h2 className="font-weight-light">Crafting Connections, Inspiring Growth</h2>
               <p className="font-italic text-muted mb-4">
-                {product.description}
+                {profile.description}
               </p>
 
             </div>
@@ -197,17 +195,17 @@ const View = () => {
             <li>
               <i className="fa fa-phone" />
               <a href="tel:08510004495">
-                <b>{product.contactnumber}</b>
+                <b>{profile.contactnumber}</b>
               </a>
               ,
               <a href="tel:08510005495">
-                <b>{product.contactnumber}</b>
+                <b>{profile.contactnumber}</b>
               </a>
             </li>
             <li>
               <i className="fa-solid fa-envelope" />
               <a href="mailto:pardeepkumar4bjp@gmail.com">
-                <b> {product.email}</b>
+                <b> {profile.email}</b>
               </a>
             </li>
           </ul>
