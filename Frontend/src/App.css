@@ -4461,13 +4461,14 @@ input[type="button"].btn-block {
   display: block;
 }
 
-.navbar {
+.navbar{
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
+
 }
 
 .navbar .container,
@@ -4475,7 +4476,7 @@ input[type="button"].btn-block {
 .navbar .container-sm,
 .navbar .container-md,
 .navbar .container-lg,
-.navbar .container-xl {
+.navbar.container-xl {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -4505,7 +4506,7 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .navs-link {
   padding-right: 0;
   padding-left: 0;
 }

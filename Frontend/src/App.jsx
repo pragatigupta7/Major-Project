@@ -26,13 +26,14 @@ import View from './components/view'
 import Digitalmarketing from './components/Digitalmarketing'
 import DM from './components/DM'
 import Card from './components/Card'
-<<<<<<< HEAD
-import Sidebar from './Admin/Sidebar'
-=======
-import View2 from './components/View2'
+
 import AdminDashboard from './components/Admin/AdminDashboard'
 import Admin from './components/Admin/Index'
->>>>>>> 63dddfed9f90f94558ccbe448fe114d749653306
+import Sidebar from './components/Admin/Sidebar'
+import Listing from './components/Listing'
+import Sidebar2 from './components/Admin/Sidebar2'
+
+
 
 
 
@@ -67,7 +68,7 @@ const App = () => {
        <Route path="Digitalmarketing" element={<Digitalmarketing />} />
        <Route path="DM" element={<DM/>} />
        <Route path='/View/:id' element={<View/>} />
-       <Route path='/View2/:id' element={<View2/>} />
+       <Route path='Listing' element={<Listing/>} />
        <Route path='Card' element={<Card/>} />
       
       
@@ -78,9 +79,10 @@ const App = () => {
        <Route path="/Admin" element={<Admin/>}>
         {/* <Route path="ProfileEditing" element={<ProfileEditing />} /> */}
         <Route path="AdminDashboard" element={<AdminDashboard />} />
-        <Route path="Sidebar" element={<Sidebar />} />
-     
-
+        <Route path="Sidebar" element={<Sidebar/>} />
+        <Route path="Sidebar2" element={<Sidebar2/>} />
+        <Route path="Manageuser" element={<Manageuser/>} />
+       
        </Route>
        
 

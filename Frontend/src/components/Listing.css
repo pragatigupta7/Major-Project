@@ -1,42 +1,39 @@
 .ag-format-container {
     width: 100%;
     margin-top: 20px;
-    text-align: center;
+    /*display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px ;
+    grid-gap: 20px;*/
   }
-  
-  
   body {
     background-color: #ffff;
   }
-  .ag-courses_box {
+  .ag-courses_boxx {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 50px 0;
-    margin-top: 100px;
+    padding: 50px o;
+    margin-top: 30px;
   }
-  .ag-courses_item {
+  .ag-courses_items{
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
-  
     margin: 0 15px 30px;
-  
     overflow: hidden;
-  
     border-radius: 28px;
   }
   .ag-courses-item_link {
     display: block;
     padding: 30px 20px;
     background-color: #fff;
-  
     overflow: hidden;
-  
     position: relative;
   }
   .ag-courses-item_link:hover,
@@ -58,9 +55,7 @@
   .ag-courses-item_title {
     min-height: 87px;
     margin: 0 0 25px;
-  
     overflow: hidden;
-  
     font-weight: bold;
     font-size: 30px;
     color: black;
@@ -70,7 +65,6 @@
   .ag-courses-item_date-box {
     font-size: 18px;
     color: black;
-  
     z-index: 2;
     position: relative;
   }
@@ -89,14 +83,11 @@
     height: 128px;
     width: 128px;
     background-color: #952aff;
-  
     z-index: 1;
     position: absolute;
     top: -75px;
-    right: -75px;
-    
+    right: -75px; 
     border-radius: 50%;
-  
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
@@ -143,7 +134,6 @@
     .ag-courses-item_title {
       min-height: 72px;
       line-height: 1;
-  
       font-size: 24px;
     }
     .ag-courses-item_link {
@@ -152,17 +142,5 @@
     .ag-courses-item_date-box {
       font-size: 16px;
     }
-  }
-  .input {
-    color: white;
-    border: 2px solid #8707ff;
-    border-radius: 10px;
-    padding: 10px 25px;
-    background: transparent;
-    max-width: 190px;
-  }
-  
-  .input:active {
-    box-shadow: 2px 2px 15px #8707ff inset;
   }
   

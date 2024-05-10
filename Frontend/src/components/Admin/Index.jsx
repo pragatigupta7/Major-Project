@@ -1,12 +1,14 @@
 import React from 'react'
-import Sidebar from './Sidebar'
+
 import { Outlet } from 'react-router-dom'
+
+import Sidebar2 from './Sidebar2'
 
 const Admin = () => {
   return (
     <>
    
-      <Sidebar />
+      <Sidebar2/>
    
      <div style={{marginLeft:"100px"}}>
     <Outlet />   </div>                  
