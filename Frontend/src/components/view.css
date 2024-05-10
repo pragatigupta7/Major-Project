@@ -12,6 +12,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
+.main-banner{
+  background: url(../assets//viewheader.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 ul {
   list-style: none;

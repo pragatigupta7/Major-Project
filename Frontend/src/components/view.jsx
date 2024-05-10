@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import bannerryt from "../assets/images/banner-right-image.png"
+
 import port from "../assets/images/portfolio-image.png"
 import './view.css'
 import { Link } from 'react-router-dom'
@@ -31,7 +31,8 @@ const View = () => {
         data-wow-duration="1s"
         data-wow-delay="0.5s"
       >
-        <div className="container">
+        <div className="container"  >
+          
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
@@ -41,10 +42,11 @@ const View = () => {
                     data-wow-duration="1s"
                     data-wow-delay="1s"
                   >
-                    <h6>Welcome {profile.name}</h6>
+                    <h6 style={{fontSize:"50px"}}>Welcome {profile.name}</h6>
                     <h2>
                       {profile.companyname}
                     </h2>
+                    <p style={{fontSize:'30px',fontFamily:"monospace"}}> {profile.description}</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -53,9 +55,7 @@ const View = () => {
                     data-wow-duration="1s"
                     data-wow-delay="0.5s">
 
-                    <img
-                      src={bannerryt}
-                      alt="team meeting" />
+            <img   src={"http://localhost:5000/"+profile.image } alt="img"  style={{width:'500px',height:'400px',marginTop:'30%',borderRadius:'10%'}}/>
                   </div>
                 </div>
               </div>
@@ -66,10 +66,10 @@ const View = () => {
       <div className="bg-white py-5">
         <div className="container py-5">
           <div className="row align-items-center mb-5">
-            <div className="col-lg-6 order-2 order-lg-1">
-              <i className="fa fa-bar-chart fa-2x mb-3 text-primary" /><h1>ABOUT</h1>
-              <h2 className="font-weight-light">Crafting Connections, Inspiring Growth</h2>
-              <p className="font-italic text-muted mb-4">
+            <div className="col-lg-6 order-2 order-lg-1" >
+              <i className="fa fa-bar-chart fa-2x mb-3 text-primary" /><h1 style={{fontSize:"50px"}}>ABOUT</h1>
+              <h2 className="font-weight-light"style={{fontSize:"40px"}}>Crafting Connections, Inspiring Growth</h2>
+              <p className="font-italic text-muted mb-4" style={{fontSize:"30px"}}>
                 {profile.description}
               </p>
 

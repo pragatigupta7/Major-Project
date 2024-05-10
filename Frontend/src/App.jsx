@@ -30,6 +30,7 @@ import Card from './components/Card'
 import AdminDashboard from './components/Admin/AdminDashboard'
 import Admin from './components/Admin/Index'
 import Listing from './components/Listing'
+import List from './components/List'
 
 
 
@@ -66,6 +67,7 @@ const App = () => {
        <Route path='/View/:id' element={<View/>} />
        <Route path='Listing' element={<Listing/>} />
        <Route path='Card' element={<Card/>} />
+       <Route path='List' element={<List/>} />
       
       
      
