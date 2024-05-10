@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams} from 'react-router-dom'
 import bannerryt from "../assets/images/banner-right-image.png"
 import port from "../assets/images/portfolio-image.png"
-import "../components/view.css"
+import './view.css'
 
 const View = () => {
   const { id } = useParams();

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Admin/Sidebar2.css"
+import './Sidebar2.css'
 import img from "../Admin/professionalpic.jpg"
 import { Link } from 'react-router-dom'
 

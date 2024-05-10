@@ -53,7 +53,7 @@ const Home = () => {
 
 <header className="foi-header landing-header">
     <div className="container">
-      <navs className="navbar navbar-expand-lg navbar-light foi-navbar">
+      <nav className="navbar navbar-expand-lg navbar-light foi-navbar">
         <Link className="navbar-brand" to="#">
         <img src={header} alt="logo" />
         </Link>
@@ -124,7 +124,7 @@ const Home = () => {
           {showLoggedin()}
          
         </div>
-      </navs>  
+      </nav>  
       <div className="header-content">
         <div className="row">
           <div className="col-md-6">
