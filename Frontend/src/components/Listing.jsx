@@ -18,25 +18,25 @@ const Listing = () => {
     fetchaddprofile()
   }, []);
   const displayProfile = () => {
-    return profiles.map((pro) => (
+    return profiles.map((item) => (
       <div className="col-md-4">
-      <div class="ag-format-container">
-          <div class="ag-courses_box">
+      <div className="ag-format-container">
+          <div className="">
               <div class="ag-courses_item">
-                  <a href="#" class="ag-courses-item_link">
+                  <Link to={"/view/" + item._id} className="ag-courses-item_link">
                       <div class="ag-courses-item_bg"></div>
 
                       <div class="ag-courses-item_title">
-                          UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+                      {item.companyname}
                       </div>
 
-                      <div class="ag-courses-item_date-box">
-                          Start:
-                          <span class="ag-courses-item_date">
-                              04.11.2022
+                      <div className="ag-courses-item_date-box">
+                          Email
+                          <span className="ag-courses-item_date">
+                          {item.email}
                           </span>
                       </div>
-                  </a>
+                  </Link>
               </div>
           </div>
       </div>

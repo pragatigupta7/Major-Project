@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import bannerryt from "../assets/images/banner-right-image.png"
 import port from "../assets/images/portfolio-image.png"
 import './view.css'
+import { Link } from 'react-router-dom'
 
 const View = () => {
   const { id } = useParams();
@@ -15,20 +16,14 @@ const View = () => {
       console.log(data);
       setProfile(data);
     };
-    useEffect(() => {
-      fetchaddprofile();
-    }, []);
   }
+
+  useEffect(() => {
+    fetchaddprofile();
+  }, []);
 
   return (
     <div>
-      {/*} <h1>Product Details</h1>
-      <h2>{product.name}</h2>
-      <h3>{product.email}</h3>
-      <h3>{product.companyname}</h3>
-      <h3>{product.contactnumber}</h3>
-      <h5>{product.description}</h5>
-  <Link to="/">Back to Home</Link>*/}
 
       <div
         className="main-banner wow fadeIn"
@@ -109,7 +104,7 @@ const View = () => {
           </div>
           <div className="row">
             <div className="col-lg-3 col-sm-6">
-              <a href="#">
+              <Link to="#">
                 <div
                   className="item wow bounceInUp"
                   data-wow-duration="1s"
@@ -123,10 +118,10 @@ const View = () => {
                     <img src={port} alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-6">
-              <a href="#">
+              <Link to="#">
                 <div
                   className="item wow bounceInUp"
                   data-wow-duration="1s"
@@ -140,7 +135,7 @@ const View = () => {
                     <img src={port} alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-6">
               <a href="#">
@@ -179,117 +174,117 @@ const View = () => {
           </div>
         </div>
       </div>
-<br></br>
-<br></br><br></br>
+      <br></br>
+      <br></br><br></br>
       <section className="contact-sec sec-pad">
-  <div className="container">
-    <div className="row">
-      <div className="col-md-6">
-        <div className="contact-detail">
-          <h1 className="section-title">Contact us</h1>
-          <ul className="contact-ul">
-            <li>
-              <i className="fa fa-location-dot" /> 91, Ram Nagar, Ram Mandir,
-              Delhi
-            </li>
-            <li>
-              <i className="fa fa-phone" />
-              <a href="tel:08510004495">
-                <b>{profile.contactnumber}</b>
-              </a>
-              ,
-              <a href="tel:08510005495">
-                <b>{profile.contactnumber}</b>
-              </a>
-            </li>
-            <li>
-              <i className="fa-solid fa-envelope" />
-              <a href="mailto:pardeepkumar4bjp@gmail.com">
-                <b> {profile.email}</b>
-              </a>
-            </li>
-          </ul>
-          <span>
-            <a href="#" className="fb">
-              <i className="fa-brands fa-facebook" />
-            </a>
-            <a href="#" className="insta">
-              <i className="fa-brands fa-instagram" />
-            </a>
-            <a href="#" className="twitter">
-              <i className="fa-brands fa-twitter" />
-            </a>
-          </span>
-        </div>
-      </div>
-      <div className="col-md-6">
-        <form action="#" className="contFrm" method="POST">
+        <div className="container">
           <div className="row">
-            <div className="col-sm-6">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                className="inptFld"
-                required=""
-              />
+            <div className="col-md-6">
+              <div className="contact-detail">
+                <h1 className="section-title">Contact us</h1>
+                <ul className="contact-ul">
+                  <li>
+                    <i className="fa fa-location-dot" /> 91, Ram Nagar, Ram Mandir,
+                    Delhi
+                  </li>
+                  <li>
+                    <i className="fa fa-phone" />
+                    <Link href="tel:08510004495">
+                      <b>{profile.contactnumber}</b>
+                    </Link>
+                    ,
+                    <Link to="tel:08510005495">
+                      <b>{profile.contactnumber}</b>
+                    </Link>
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-envelope" />
+                    <a href="mailto:pardeepkumar4bjp@gmail.com">
+                      <b> {profile.email}</b>
+                    </a>
+                  </li>
+                </ul>
+                <span>
+                  <Link to="#" className="fb">
+                    <i className="fa-brands fa-facebook" />
+                  </Link>
+                  <Link to="#" className="insta">
+                    <i className="fa-brands fa-instagram" />
+                  </Link>
+                  <Link to="#" className="twitter">
+                    <i className="fa-brands fa-twitter" />
+                  </Link>
+                </span>
+              </div>
             </div>
-            <div className="col-sm-6">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                className="inptFld"
-                required=""
-              />
-            </div>
-            <div className="col-sm-6">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                className="inptFld"
-                required=""
-              />
-            </div>
-            <div className="col-sm-6">
-              <input
-                type="text"
-                name="sub"
-                placeholder="Subject"
-                className="inptFld"
-                required=""
-              />
-            </div>
-            <div className="col-12">
-              <textarea
-                className="inptFld"
-                rows=""
-                cols=""
-                placeholder="Your Message..."
-                required=""
-                defaultValue={""}
-              />
-            </div>
-            <div className="col-12">
-              <input
-                type="submit"
-                name="submit"
-                defaultValue="SUBMIT"
-                className="inptBtn"
-              />
+            <div className="col-md-6">
+              <form action="#" className="contFrm" method="POST">
+                <div className="row">
+                  <div className="col-sm-6">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                      className="inptFld"
+                      required=""
+                    />
+                  </div>
+                  <div className="col-sm-6">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Address"
+                      className="inptFld"
+                      required=""
+                    />
+                  </div>
+                  <div className="col-sm-6">
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Phone Number"
+                      className="inptFld"
+                      required=""
+                    />
+                  </div>
+                  <div className="col-sm-6">
+                    <input
+                      type="text"
+                      name="sub"
+                      placeholder="Subject"
+                      className="inptFld"
+                      required=""
+                    />
+                  </div>
+                  <div className="col-12">
+                    <textarea
+                      className="inptFld"
+                      rows=""
+                      cols=""
+                      placeholder="Your Message..."
+                      required=""
+                      defaultValue={""}
+                    />
+                  </div>
+                  <div className="col-12">
+                    <input
+                      type="submit"
+                      name="submit"
+                      defaultValue="SUBMIT"
+                      className="inptBtn"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
-    <div style={{ textAlign: "center", marginTop: 20 }}>
-      <p> Copyright © All rights reserved | Ajeet</p>
-    </div>
-  </div>
-</section>
+          <div style={{ textAlign: "center", marginTop: 20 }}>
+            <p> Copyright © All rights reserved | Ajeet</p>
+          </div>
+        </div>
+      </section>
 
-           
+
 
     </div>
   )

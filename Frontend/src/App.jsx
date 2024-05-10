@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Features from './components/Features'
 import Addprofile from './components/Addprofile'
-import Navbar from './components/Navbar'
+
 import { SnackbarProvider } from 'notistack'
 import Arsha from './components/Arsha'
 
@@ -29,9 +29,8 @@ import Card from './components/Card'
 
 import AdminDashboard from './components/Admin/AdminDashboard'
 import Admin from './components/Admin/Index'
-import Sidebar from './components/Admin/Sidebar'
 import Listing from './components/Listing'
-import Sidebar2 from './components/Admin/Sidebar2'
+
 
 
 
@@ -45,11 +44,10 @@ const App = () => {
       <SnackbarProvider>
       <BrowserRouter>
       <UserProvider>
-    {/*<Navbar/>*/}
+
       <Routes>
       <Route path='/' element={<Home/>}/> 
        <Route path='/Home' element={<Home/>}/> 
-       <Route path='/Navbar' element={<Navbar/>}/> 
        <Route path='/Signup' element={<Signup/>}/>
        <Route path='/Login' element={<Login/>}/>
        <Route path='/Contact' element={<Contact/>}/>
@@ -77,8 +75,7 @@ const App = () => {
        <Route path="/Admin" element={<Admin/>}>
         {/* <Route path="ProfileEditing" element={<ProfileEditing />} /> */}
         <Route path="AdminDashboard" element={<AdminDashboard />} />
-        <Route path="Sidebar" element={<Sidebar/>} />
-        <Route path="Sidebar2" element={<Sidebar2/>} />
+      
         <Route path="Manageuser" element={<Manageuser/>} />
        
        </Route>
