@@ -1,5 +1,5 @@
 import React from 'react'
-import hub from '../assets/hub.png'
+import hub from '../assets/hubb.png'
 import about from '../assets/about.png'
 import slack from '../assets/client/clients/slack.svg'
 import Samsung from '../assets/client/clients/samsung.svg'
@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import apple from '../assets/apple.jpeg'
 import DM from '../assets/DM.jpeg'
 import it from '../assets/it.jpeg'
-import header from '../assets/Logo.png'
+import header from '../assets/Logo-removebg-preview.png'
 import insta from '../assets/instagram.svg'
 import fb from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
@@ -136,8 +136,8 @@ const Home = () => {
                 <button className="btn btn-primary mb-4">Get Started</button>
 
               </div>
-              <div className="col-md-6">
-                <img src={hub} alt="logo" width="388px" className="img-fluid" />
+              <div className="col-md-5">
+                <img src={hub} alt="logo" width="700px" style={{marginLeft:'30%' ,height:'600px'}} className="img-fluid" />
               </div>
             </div>
           </div>
