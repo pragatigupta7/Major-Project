@@ -1,6 +1,6 @@
 import React from 'react'
 import login from '../assets/login.png'
-import { Link, Navigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
 import useUserContext from '../UserContext'   //for change in login button into logout button
@@ -16,6 +16,7 @@ const LoginSchema = Yup.object().shape({
   .max(15, 'Password must be at most 15 characters')
 })
 const Login = () => {
+  const Navigate = useNavigate();
 //logout
 const{setLoggedIn} = useUserContext();
   //logout
@@ -39,6 +40,7 @@ const{setLoggedIn} = useUserContext();
   
         if(res.status===200){
           enqueueSnackbar('Login successful',{variant:'success'})
+          Navigate('/EditPage')
           
       
       }setLoggedIn(true);

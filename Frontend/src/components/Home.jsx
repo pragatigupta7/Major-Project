@@ -33,7 +33,7 @@ const Home = () => {
         </ul>
       );
     } else {
-      return <div >
+      return <div style={{marginLeft:'300px'}} >
         <ul className="navbar-nav mt-2 mt-lg-0">
           <li className="nav-item mr-2 mb-3 mb-lg-0">
             <Link className="btn btn-secondary" to="/Signup">

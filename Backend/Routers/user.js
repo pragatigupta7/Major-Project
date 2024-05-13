@@ -44,7 +44,10 @@ router.get("/getbyemail/:email",(req,res)=>{                           //forget
     });
 
 });
-router.put('/update/:id', (req,res)=> {                                           //forget       
+router.put('/update/:id', (req,res)=> {       
+    if (!req.params.id) {
+        return res.status(400).json({ error: 'Missing id parameter' });
+    }                                    //forget       
     Model.findByIdAndUpdate(req.params.id,req.body,{new:true})                                                                  //search sbkuch
     .then((result)=> {
        res.status(200).json(result);
