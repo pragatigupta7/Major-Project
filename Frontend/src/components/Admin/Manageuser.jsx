@@ -28,8 +28,8 @@ const Manageuser = () => {
         })
     }
   return (
-    <>
-      <div className="container"style={{margin:'10%',marginLeft:'20%',height:'500px'}}>
+  
+      <div className="container">
         <div className="row">
           <div className="col-md-offset-1 col-md-10">
             <div className="panel">
@@ -63,9 +63,9 @@ const Manageuser = () => {
                   <tbody>
                     {displayUsers()}
                     </tbody></table></div></div></div></div></div>
-                   
+                 
                   
-   </>
+   
 
   )
 }
