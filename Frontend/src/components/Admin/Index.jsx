@@ -1,5 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+
+
+
 import Sidebar2 from './Sidebar2'
 
 const Admin = () => {

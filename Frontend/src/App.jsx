@@ -31,6 +31,9 @@ import AdminDashboard from './components/Admin/AdminDashboard'
 import Admin from './components/Admin/Index'
 import Listing from './components/Listing'
 import List from './components/List'
+import AdminSL from './components/Admin/AdminSL'
+import AdminProfile from './components/Admin/AdminProfile'
+
 
 
 
@@ -79,6 +82,8 @@ const App = () => {
         <Route path="AdminDashboard" element={<AdminDashboard />} />
       
         <Route path="Manageuser" element={<Manageuser/>} />
+        <Route path="AdminSL" element={<AdminSL/>} />
+        <Route path="AdminProfile" element={<AdminProfile/>} />
        
        </Route>
        
