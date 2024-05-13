@@ -23,6 +23,7 @@ body {
   flex-wrap: wrap;
   padding: 50px o;
   margin-top: 30px;
+  
 }
 
 .ag-courses_items {
@@ -31,6 +32,7 @@ body {
   margin: 0 15px 30px;
   overflow: hidden;
   border-radius: 28px;
+  
 }
 
 .ag-courses-item_link {

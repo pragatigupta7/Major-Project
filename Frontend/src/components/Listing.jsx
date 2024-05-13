@@ -21,7 +21,7 @@ const Listing = () => {
     return profiles.map((item) => (
       <div className="col-md-4">
       <div className="ag-format-container">
-          <div className="">
+          <div className="card">
               <div class="ag-courses_item">
                   <Link to={"/view/" + item._id} className="ag-courses-item_link">
                       <div class="ag-courses-item_bg"></div>
