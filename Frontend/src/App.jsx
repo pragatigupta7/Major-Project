@@ -32,8 +32,11 @@ import Admin from './components/Admin/Index'
 import Listing from './components/Listing'
 import List from './components/List'
 import EditPage from './components/EditPage'
-// import AdminSL from './components/Admin/AdminSL'
-// import AdminProfile from './components/Admin/AdminProfile'
+import IT from './components/IT'
+import Editprofile2 from './components/Editprofile2'
+import Editpage2 from './components/Editpage2'
+
+
 
 
 
@@ -74,6 +77,9 @@ const App = () => {
        <Route path='List' element={<List/>} />
        <Route path='IT' element={<IT/>} />
        <Route path='EditPage' element={<EditPage/>} />
+       <Route path='Editprofile2' element={<Editprofile2/>} />
+       <Route path='Editpage2' element={<Editpage2/>} />
+      
       
       
      
