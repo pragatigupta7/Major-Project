@@ -2,13 +2,13 @@ import React,{useState, useEffect}from 'react'
 
 import { Link, useParams } from 'react-router-dom'
 
-const DigitalMarketing = () => {
+const IT = () => {
     const [profiles,setProfile] = useState([])
 
     const { category } = useParams([]);
 
     const fetchaddprofile = async()=>{
-        const res = await fetch('http://localhost:5000/addprofile/getbycategory/DigitalMarketing')
+        const res = await fetch('http://localhost:5000/addprofile/getbycategory/IT')
         console.log(res.status)
         if(res.status===200){
             const data = await res.json();
@@ -115,4 +115,4 @@ const DigitalMarketing = () => {
   )
 }
 
-export default DigitalMarketing
+export default IT

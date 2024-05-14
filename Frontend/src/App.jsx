@@ -24,15 +24,17 @@ import ForgetPassword from './components/Forgetpassword'
 
 import View from './components/view'
 import Digitalmarketing from './components/Digitalmarketing'
-import DM from './components/DM'
+
 import Card from './components/Card'
 
 import AdminDashboard from './components/Admin/AdminDashboard'
 import Admin from './components/Admin/Index'
 import Listing from './components/Listing'
 import List from './components/List'
-import AdminSL from './components/Admin/AdminSL'
-import AdminProfile from './components/Admin/AdminProfile'
+import IT from './components/IT'
+
+
+
 
 
 
@@ -66,11 +68,12 @@ const App = () => {
        <Route path='/Profilelistt' element={<Profilelistt/>}/>
        <Route path="Forgetpassword" element={<ForgetPassword />} />
        <Route path="Digitalmarketing" element={<Digitalmarketing />} />
-       <Route path="DM" element={<DM/>} />
+   
        <Route path='/View/:id' element={<View/>} />
        <Route path='Listing' element={<Listing/>} />
        <Route path='Card' element={<Card/>} />
        <Route path='List' element={<List/>} />
+       <Route path='IT' element={<IT/>} />
       
       
      
@@ -82,8 +85,8 @@ const App = () => {
         <Route path="AdminDashboard" element={<AdminDashboard />} />
       
         <Route path="Manageuser" element={<Manageuser/>} />
-        <Route path="AdminSL" element={<AdminSL/>} />
-        <Route path="AdminProfile" element={<AdminProfile/>} />
+       
+       
        
        </Route>
        

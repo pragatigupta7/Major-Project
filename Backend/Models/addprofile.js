@@ -6,6 +6,7 @@ const addprofileSchema = new Schema({
     contactnumber:String,
     image: String,
     description:String,
+    Features:String,
     category: {type:String, required: true},
 });
 module.exports = model('addprofile',addprofileSchema)
