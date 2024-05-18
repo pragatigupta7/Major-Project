@@ -2,7 +2,8 @@ import { Formik } from 'formik';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { enqueueSnackbar } from 'notistack';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+ // Import Bootstrap CSS
 
 const EditPage = () => {
   const {id} = useParams();

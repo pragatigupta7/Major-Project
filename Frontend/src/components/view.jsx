@@ -20,7 +20,7 @@ const View = () => {
 
   useEffect(() => {
     fetchaddprofile();
-  }, []);
+  }, [id]);
 
   return (
     <div>
