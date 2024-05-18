@@ -5,7 +5,7 @@ import { enqueueSnackbar } from 'notistack';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const EditPage = () => {
-    const { id } = useParams();
+  const {id} = useParams();
   const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
   const [companyProfile, setCompanyProfile] = useState(currentUser.profile);
 
